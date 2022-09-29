@@ -1,5 +1,4 @@
 import sys
-import time
 
 # This class creates Graph object and have all essential methods 
 class Graph(object):
