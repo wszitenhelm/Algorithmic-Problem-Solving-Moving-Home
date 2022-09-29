@@ -1,5 +1,4 @@
 import sys
-import time
 
 
 class Box:
@@ -172,46 +171,4 @@ def place_boxes():
                 free_spaces.append(space_above)
                 free_spaces.pop(free_spaces.index(space))
                 break
-
-
-##    boxes.sort(key=lambda x:x.id)
-##    print("places boxes: ")       
-##    for box in boxes:
-##        print(box.id, box.x, box.y, box.z)
-
-    free_ = 0
-    whole_area = area_x * area_y * area_z
-    #print(whole_area)
-    for space in free_spaces:
-        print(space.x, space.y, space.z, space.len_x, space.len_y, space.len_z)
-        free_ = free_ + (space.len_x * space.len_y * space.len_z)
-
-
-    wasted = free_ / whole_area
-
-    boxess = len(boxes)
-
-    fitted = 0
-    for box in boxes:
-        if box.x != -1:
-            fitted += 1
-
-    per = fitted/boxess
-    print(f"no of boxes to be fitted: {boxess}")
-    print(f"boxes fitted: {fitted}")
-    print(f"available volume: {whole_area}")
-    print(f"volume left : {free_}")
-
-
-start = time.time()
-place_boxes()
-end = time.time()
-total = end - start
-print(f"time: {total}")
-
-
-
-
-    
-
 
