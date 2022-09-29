@@ -118,29 +118,3 @@ def shortest_time(graph, curr_node, i, memo):
                 minimum = val
                 
         return minimum
-
-
-start = time.time()
-main()
-end = time.time()
-total = end - start
-print(f"time: {total}")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-               
-
