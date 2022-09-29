@@ -65,9 +65,6 @@ def place_boxes():
             elif k+s == len(boxes)-1:
                 boxes[s:k+s+1] = boxes[s:k+s+1][::-1]
                 break
-
-##    for box in boxes:
-##        print(box.len_y, box.len_x, box.id)
             
     # Here program loops through the all boxes to find space for all of them   
     for box in boxes:
@@ -91,45 +88,3 @@ def place_boxes():
                 space.len_x = 0
                 space.len_y = 0
                 break
-            
-    # Sorting boxes by id and printing output 
-##    boxes.sort(key=lambda x:x.id) 
-##    for box in boxes:
-##        print(box.id, box.x, box.y, box.z)
-
-    # Testing methods (time and area that was not used)     
-    free_ = 0
-    whole_area = area_x * area_y
-    #print(whole_area)
-    for space in free_spaces:
-        free_ = free_ + (space.len_x * space.len_y)
-
-    wasted = free_ / whole_area
-
-    boxess = len(boxes)
-
-    fitted = 0
-    for box in boxes:
-        if box.x != -1:
-            fitted += 1
-
-    per = fitted/boxess
-    print(f"no of boxes to be fitted: {boxess}")
-    print(f"boxes fitted: {fitted}")
-    print(f"boxes fitted %: {per}")
-    print(f"available area: {whole_area}")
-    print(f"space left : {free_}")
-    print(f"space left % : {wasted}")
-
-    
-
-start = time.time()
-place_boxes()
-end = time.time()
-total = end - start
-print(f"time: {total}")
-
-
-    
-
-
