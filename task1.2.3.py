@@ -1,6 +1,5 @@
 import sys 
 
-
 # This class was created to keep track of box's size and coordinates
 # to be able to comprare it with FreeSpace's size.
 class Box:
