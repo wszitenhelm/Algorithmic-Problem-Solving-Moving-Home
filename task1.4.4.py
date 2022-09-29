@@ -1,6 +1,5 @@
 import sys
 
-
 class Box:
     def __init__(self, box_id, len_x, len_y, len_z, x, y, z):
         self.id = box_id
