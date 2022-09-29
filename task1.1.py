@@ -62,9 +62,6 @@ def place_boxes():
                 space.len_x = 0
                 space.len_y = 0
                 break 
-    # Printing output     
-##    for box in boxes:
-##        print(box.id, box.x, box.y, box.z)
 
     # Testing methods (time and area that was not used)    
     free_ = 0
