@@ -1,5 +1,4 @@
 import sys 
-import time
 
 
 # This class was created to keep track of box's size and coordinates
